@@ -1,0 +1,82 @@
+@font-face
+{
+  font-family: UNCTitle;
+  src: url('fonts/Aleo.ttf');
+}
+@font-face
+{
+  font-family: UNCText;
+  src: url('fonts/OpenSans.ttf');
+}
+:root
+{
+  --UNC-Blue: #0ca3e9;
+  --UNC-Gold: #
+  --UNC-Gray: #7c7575;
+}
+*
+{
+  font-family:UNCText;
+  color: var(--UNC-Gray);
+}
+h1, h2, h3, h4, h5, h6
+{
+  font-family: UNCTitle;
+  color: var(--UNC-Blue);
+  
+  font-size: 35px;
+  font-family: cursive;
+}
+@keyframes spin {
+  from {
+    transform: rotateY(0);
+  }
+  to { 
+    transform:rotateY(1turn);
+  }
+  h1
+ {
+   animation: spin 5s ease;
+   animation-iteration-count: infinite;
+  }
+  h1{
+    perspective:1000px;
+  }
+  
+}
+
+html, body {
+  background-color: #d3e2eb;
+}
+/*unvisited link */
+a:link {
+  color: #013c65;
+}
+
+/* visited link */
+a:visited {
+  color: #5d99c4;
+}
+
+table
+{
+  border: ridge #013c65 3px;
+  background-color: #60697a;
+  padding: 3px;
+}
+th
+{
+  font-size: 24px;
+  font-family: Monospace;
+}
+a:hover
+{
+  background: #f6b000;
+}
+
+h1:hover, h2:hover, h3:hover
+{
+  color: blue;
+}
+  
+  
