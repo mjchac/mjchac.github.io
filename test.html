@@ -58,12 +58,14 @@
     <td><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fmjchac.github.io%2Finspire.html#textarea">Template Validation</a></td>
   </tr>
 </table>
-    
-<form action="https://validator.w3.org/nu/" method="GET">
-  <label for="docurl">Page to Validate:</label>
-  <!--<input type="text" name="doc" id="docurl" placeholder="Please enter a valid URL">-->
-  <textarea id="docurl" name="doc"</textarea><!--Could use this line or the one above to use as the "search bar" this line looks like a text entry box-->
-  <input type="submit" value="GO">
-    </form>
+<fieldset>
+  <legend>Custom Site Validator</legend>
+  <form action="https://validator.w3.org/nu/" method="GET">
+    <label for="docurl">Page to Validate:</label>
+    <!--<input type="text" name="doc" id="docurl" placeholder="Please enter a valid URL">-->
+    <input type="checkbox" name="showsource" id="checkbox" checked>
+    <textarea id="docurl" name="doc">testing</textarea><!--Could use this line or the one above to use as the "search bar" this line looks like a text entry box-->
+    <input type="submit" value="GO">
+   </form>
   </body>
 </html>
