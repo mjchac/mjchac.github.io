@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang=""en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+    <link rel="stylesheet" href="css/UNC.css">
+</head>
+<body>
+    <h1>Google Super Search</h1>
+    <form action="https://www.google.com/search/" method="GET" target="_blank">
+        <fieldset>
+            <div>
+            <label for="Searchbar">Explore</label>
+            <input type="text" name="q" id="Searchbar">
+            </div>
+            <div>
+            <label for="site">Select a Site</label>
+            <select name="as_sitesearch" id="site">
+                <option value="verywellmind.com">Verywell Mind</option>
+                <option value="simplypsychology.org">Simply Psychology</option>
+                <option value="psychologytoday.com">Psychology Today</option>
+                <option value="apa.org">American Psychological Association</option>
+            </select>
+            </div>
+            <div>
+                <input type="checkbox" name="newwindow" value="1" id="checkwindow">
+                <label for="checkwindow">Open Links in New Window</label>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
