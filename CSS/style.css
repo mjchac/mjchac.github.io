@@ -16,5 +16,9 @@ h1{
     font-size: calc(12pt + 4vw);
 }
 nav{
-    border: 3px var(--UNC-Gray) solid
+    border: 3px var(--UNC-Gray) solid;
 }
+section{
+    border:3px var(--UNC-Gray) solid;
+    
+    
