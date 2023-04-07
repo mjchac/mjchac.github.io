@@ -1,0 +1,41 @@
+@font-face 
+{
+  font-family: myFirstFont;
+  src: url(sansation_light.woff);
+}
+@font-face 
+{
+  font-family: myFirstFont;
+  src: url(sansation_bold.woff);
+  font-weight: bold;
+}
+:root
+{
+  --UNC-Walnut:#643615;
+  --UNC-Gray: #8a8a8d;
+  --UNC-Sky: #afc7d4;
+}
+*
+{
+    font-family: myFirstFont;
+    color: black;
+}
+h1, h2, h3, h4, h5, h6
+{
+    font-family: myFirstFont;
+    color: var(--UNC-Walnut);
+    clear: both;
+    font-size: 35px;
+}
+body
+{
+  background-color: var(--UNC-Gray);
+}
+img
+{
+  float: left;
+  border: 3px solid white;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 25%;
+}
