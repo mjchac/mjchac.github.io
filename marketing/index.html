@@ -2,31 +2,60 @@
 <html lang= "en-US">
   
   <head>
-    <link rel="stylesheet" href="css/main.css">
     <meta charset="UTF-8">
-    <title>Useful links/Template Page</title>
-    
+    <title>Rocky Mountain Mobile Tires</title>
     <style>
-      :root{
-        --UNC-Blue: #013c65;
-        --UNC-BlueGray: #60697a;
-        --UNC-Butter: #f5e3b1
+      .div{
+        <div style="padding-left: 16px">
       }
+      .topnav a.icon{
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        top:0;
+      }
+      function myFunction(){
+        var x =
+        document.getElementById("myLinks");
+        if (x.style.display === "block")
+        {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+        }
       h1{
-        color: var(--UNC-BlueGray);
+        background-color: aqua;
+        text-align: center;
       }
       p{
-        color: var(--UNC-Blue);
+        color: white;
       }
       html{
-        background-color: var(--UNC-Butter);
+        background-color: black;
+      }
+      body{
+        background-color: black;
       }
      </style>
   </head>
-  
+
   <body>
-    <h1>Useful links/Template page</h1>
-    <p> Useful links for class</p>
+    <div class="mobile-container">
+       <!--Top Navigation Menu-->
+       <div class=""topnav">
+      <a href="#home"
+    class="active">Logo</a>
+  <div id="myLinks">
+    <a href="#news">News</a>
+    <a href="#contact">Contact Us</a>
+    <a href="about">About</a>
+</div>
+    </div>
+    
+    <h1>Rocky Mountain Mobile Tires</h1>
+    <p>Rocky Mountain Mobile Tires</p>
     <a href= "https://www.unco.edu/marketing-communications/pdf/UNC-Style-Guide-2018.pdf">UNCO Style Guide (pg. 24)</a>
     <br>
     <a href= "http://www.csszengarden.com/">CSS Zen Garden</a>
@@ -36,5 +65,18 @@
     <a href= "https://validator.w3.org/">Code Validator</a>
     <br>
     <a href= "https://www.w3schools.com/">Coding Help</a>
+
+     
+  <script>
+    function myFunction() {
+      var x =argumentsdocument.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+      }
+  </script>
+  
   </body>
 </html>
