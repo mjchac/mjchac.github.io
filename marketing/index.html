@@ -5,26 +5,6 @@
     <meta charset="UTF-8">
     <title>Rocky Mountain Mobile Tires</title>
     <style>
-      .div{
-        <div style="padding-left: 16px">
-      }
-      .topnav a.icon{
-        background: black;
-        display: block;
-        position: absolute;
-        right: 0;
-        top:0;
-      }
-      function myFunction(){
-        var x =
-        document.getElementById("myLinks");
-        if (x.style.display === "block")
-        {
-          x.style.display = "none";
-        } else {
-          x.style.display = "block";
-        }
-        }
       h1{
         background-color: aqua;
         text-align: center;
@@ -39,44 +19,20 @@
         background-color: black;
       }
      </style>
+     <div class="dropdown">
+      <button onclick="myFunction()"
+      class="dropbtn">Menu</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#Aboutus">About Us</a>
+        <a href="#Contactus">Contact Us</a>
+        <a href="#PhotoGallery">Photo Gallery</a>
+      </div>
+     </div>
   </head>
 
   <body>
-    <div class="mobile-container">
-       <!--Top Navigation Menu-->
-       <div class=""topnav">
-      <a href="#home"
-    class="active">Logo</a>
-  <div id="myLinks">
-    <a href="#news">News</a>
-    <a href="#contact">Contact Us</a>
-    <a href="about">About</a>
-</div>
-    </div>
-    
     <h1>Rocky Mountain Mobile Tires</h1>
     <p>Rocky Mountain Mobile Tires</p>
-    <a href= "https://www.unco.edu/marketing-communications/pdf/UNC-Style-Guide-2018.pdf">UNCO Style Guide (pg. 24)</a>
-    <br>
-    <a href= "http://www.csszengarden.com/">CSS Zen Garden</a>
-    <br>
-    <a href= "https://fonts.google.com/">Google Fonts</a>
-    <br>
-    <a href= "https://validator.w3.org/">Code Validator</a>
-    <br>
-    <a href= "https://www.w3schools.com/">Coding Help</a>
-
-     
-  <script>
-    function myFunction() {
-      var x =argumentsdocument.getElementById("myLinks");
-      if (x.style.display === "block") {
-        x.style.display = "none";
-      } else {
-        x.style.display = "block";
-      }
-      }
-  </script>
   
   </body>
 </html>
