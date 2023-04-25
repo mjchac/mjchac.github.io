@@ -6,19 +6,38 @@
     <title>Rocky Mountain Mobile Tires</title>
     <style>
       .navbar {
-        overflow: hidden;
+        width: 100%;
+        overflow: auto;
         background-color: aqua;
         text-align: center;
       }
       .navbar a {
+        float: left;
         font-size: 15px;
         color: black;
-        padding: 100px;
+        padding: 12px;
+        text-align: center;
+      }
+      .navbar a.active {
+        background-color: beige;
       }
       .navbar a:hover,
       .dropdown:hover .dropbtn,
       .dropbtn:focus {
         background-color: beige;
+      }
+      @media screen and (max-width:500px) {
+        .navbar a {
+          float: none;
+          display: block;
+          width: 100%;
+          text-align: center;
+        }
+      }
+      footer {
+        overflow: hidden;
+        background-color: aqua;
+        text-align: left;
       }
       body {
         background-color: grey;
@@ -53,10 +72,12 @@
 
   <body>
     <div class="navbar">
-  <a href="https://mjchac.github.io/marketing/index.html" class="#home">Home</a>
-  <a href="https://mjchac.github.io/marketing/information.html" class="#Info</a>
-  <a href="https://mjchac.github.io/marketing/photos.html" class="#photogallery">Photo Gallery</a>
-  <a href="https://rockymountainmobiletires.com/" class="Initial">Actual Website</a>
+      <a class="active"
+  href="https://mjchac.github.io/marketing/index.html">Home</a>
+  <a href="https://mjchac.github.io/marketing/information.html">About Us</a>
+  <a href="https://mjchac.github.io/marketing/contact.html">Contact Us</a>
+  <a href="https://mjchac.github.io/marketing/photos.html">Gallery</a>
+  <a href="https://rockymountainmobiletires.com/">Website</a>
 </div>
 
 <h2>About Us</h2>
@@ -70,5 +91,8 @@
 <h3>Personal Convenience</h3>
 <p>We know your time is important to you, whether you're the owner of a business, an everyday driver or a stay at home parent. Let us come and provide our quality service to you at work, home, or when you're broken down on the road. Don't worry about having to take time off from work, taking time away from personal time, or about loading kids up and sitting in a waiting room for who knows how long.</p>
 <p>Covid Concerns? Allow us to do the work while you stay safe in your home!</p>
+    
+    <footer>Copyright © 2021 ROCKY MOUNTAIN MOBILE TIRES - All Rights Reserved.</footer>
+      
 </body>
 </html>
