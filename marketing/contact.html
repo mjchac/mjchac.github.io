@@ -6,19 +6,33 @@
     <title>Rocky Mountain Mobile Tires</title>
     <style>
       .navbar {
-        overflow: hidden;
+        width: 100%;
+        overflow: auto;
         background-color: aqua;
         text-align: center;
       }
       .navbar a {
+        float: left;
         font-size: 15px;
         color: black;
-        padding: 100px;
+        padding: 12px;
+        text-align: center;
+      }
+      .navbar a.active {
+        background-color: beige;
       }
       .navbar a:hover,
       .dropdown:hover .dropbtn,
       .dropbtn:focus {
         background-color: beige;
+      }
+      @media screen and (max-width: 500px) {
+        .navbar a {
+          float: none;
+          display: block;
+          width: 100%;
+          text-align: center;
+        }
       }
       body {
         background-color: grey;
@@ -32,8 +46,8 @@
         padding-top: 25px;
         text-align: center;
         font-size: 25px;
-        background-image: url('https://github.com/mjchac/mjchac.github.io/blob/main/marketing/images/rows.jpg?raw=true')
-        background-image: no-repeat;
+        background-image: url('https://github.com/mjchac/mjchac.github.io/blob/main/marketing/images/rows.jpg?raw=true');
+        background-repeat: no-repeat;
       }
       p {
         text-align: center;
@@ -60,12 +74,14 @@
   </head>
   <body>
     <div class="navbar">
-  <a href="https://mjchac.github.io/marketing/index.html" class="#home">Home</a>
-  <a href="https://mjchac.github.io/marketing/information.html" class="#Info">About Us</a>
-  <a href="https://mjchac.github.io/marketing/contact.html" class="#Contact">Contact Us
-  <a href="https://mjchac.github.io/marketing/photos.html" class="#photogallery">Gallery</a>
-  <a href="https://rockymountainmobiletires.com/" class="Initial">Website</a>
-</div>
+      <a class="active"
+      href="https://mjchac.github.io/marketing/index.html">Home</a>
+      <a href="https://mjchac.github.io/marketing/information.html">About Us</a>
+      <a href="https://mjchac.github.io/marketing/contact.html">Contact Us</a>
+      <a href="https://mjchac.github.io/marketing/photos.html">Gallery</a>
+      <a href="https://rockymountainmobiletires.com/">Website</a>
+    </div>
+
 <h2>Contact Us<br><br></h2>
 
 <h3>Looking For Something Special?</h3>
