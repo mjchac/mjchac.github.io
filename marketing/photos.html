@@ -2,9 +2,12 @@
 <html lang= "en-US">
 
   <head>
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <title>Rocky Mountain Mobile Tires</title>
     <link href="tires.css" rel="stylesheet">
+
     <style>
       body {
         background-color: grey;
@@ -41,6 +44,9 @@
       * {
         box-sizing: border-box;
       }
+      img {
+        vertical-align: middle;
+      }
       .container {
         position: relative;
       }
@@ -64,11 +70,15 @@
         user-select: none;
         -webkit-user-select: none;
       }
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
       .prev:hover, .next:hover {
         background-color: rgba(0, 0, 0, 0.8);
       }
       .numbertext {
-        color: #f2f2f2;
+        color: aqua;
         font-size: 12px;
         padding: 8px 12px;
         position: absolute;
@@ -115,74 +125,191 @@
 <h3>Welcome</h3>
 <p>There's much to see here. So take your time, look around, and learn all there is to know about us. We hope you enjoy our site and take a moment to drop us a line.</p>
     
+<h2 style=""text-align: center">Slideshow Gallery</h2>
+
 <div class="container">
   <div class="mySlides">
-    <div class="numbertext">1/6</div>
+    <div class="numbertext">1/12</div>
     <img src="https://github.com/mjchac/mjchac.github.io/blob/main/marketing/images/information.jpg?raw=true"
     style="width:100%">
   </div>
+
   <div class="mySlides">
-    <div class="numbertext">2/6</div>
+    <div class="numbertext">2/12</div>
     <img src="https://github.com/mjchac/mjchac.github.io/blob/main/marketing/images/redtruck.jpg?raw=true"
     style="width:100%">
   </div>
+
   <div class="mySlides">
-    <div class="numbertext">3/6</div>
+    <div class="numbertext">3/12</div>
     <img src="https://github.com/mjchac/mjchac.github.io/blob/main/marketing/images/bluetire.jpg?raw=true"
     style="width:100%">
   </div>
+
   <div class="mySlides">
-    <div class="numbertext">4/6</div>
+    <div class="numbertext">4/12</div>
     <img src="https://github.com/mjchac/mjchac.github.io/blob/main/marketing/images/dadtruck.jpg?raw=true"
     style="width:100%">
   </div>
+
   <div class="mySlides">
-    <div class="numbertext">5/6</div>
+    <div class="numbertext">5/12</div>
     <img src="https://github.com/mjchac/mjchac.github.io/blob/main/marketing/images/greytire.jpg?raw=true"
     style="width:100%">
   </div>
+
   <div class="mySlides">
-    <div class="numbertext">6/6</div>
+    <div class="numbertext">6/12</div>
     <img src="https://github.com/mjchac/mjchac.github.io/blob/main/marketing/images/jeep.jpg?raw=true"
     style="width:100%">
   </div>
+
   <div class="mySlides">
-    <div class="numbertext">7/6</div>
+    <div class="numbertext">7/12</div>
     <img src="https://github.com/mjchac/mjchac.github.io/blob/main/marketing/images/redtire.jpg?raw=true"
     style="width:100%">
   </div>
+
   <div class="mySlides">
-    <div class="numbertext">8/6</div>
+    <div class="numbertext">8/12</div>
     <img src="https://github.com/mjchac/mjchac.github.io/blob/main/marketing/images/rv.jpg?raw=true"
     style="width:100%">
   </div>
+
   <div class="mySlides">
-    <div class="numbertext">9/6</div>
+    <div class="numbertext">9/12</div>
     <img src="https://github.com/mjchac/mjchac.github.io/blob/main/marketing/images/tractor.jpg?raw=true"
     style="width:100%">
   </div>
+
   <div class="mySlides">
-    <div class="numbertext">10/6</div>
+    <div class="numbertext">10/12</div>
     <img src="https://github.com/mjchac/mjchac.github.io/blob/main/marketing/images/trucktires.jpg?raw=true"
     style="width:100%">
   </div>
+
   <div class="mySlides">
-    <div class="numbertext">11/6</div>
+    <div class="numbertext">11/12</div>
     <img src="https://github.com/mjchac/mjchac.github.io/blob/main/marketing/images/whitetruck.jpg?raw=true"
     style="width:100%">
   </div>
+
   <div class="mySlides">
-    <div class="numbertext">12/6</div>
+    <div class="numbertext">12/12</div>
     <img src="https://github.com/mjchac/mjchac.github.io/blob/main/marketing/images/yellowtire.jpg?raw=true"
     style="width:100%">
   </div>
+
   <a class="prev"
   onclick="plusSlides(-1)">&#10094;</a>
   <a class="next"
   onclick="plusSlides(1)">&#10095;</a>
 
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor"
+      src="https://github.com/mjchac/mjchac.github.io/blob/main/marketing/images/information.jpg?raw=true" style="width:100%"
+      onclick="currentSlide(1)" alt="Information">
+    </div>
+    <div class="column">
+      <img class="demo cursor"
+      src="https://github.com/mjchac/mjchac.github.io/blob/main/marketing/images/redtruck.jpg?raw=true" style="width:100%"
+      onclick="currentSlide(2)" alt="Red-Truck">
+    </div>
+    <div class="column">
+      <img class="demo cursor"
+      src="https://github.com/mjchac/mjchac.github.io/blob/main/marketing/images/bluetire.jpg?raw=true" style="width:100%"
+      onclick="currentSlide(3)" alt="blue-tire">
+    </div>
+    <div class="column">
+      <img class="demo cursor"
+      src="https://github.com/mjchac/mjchac.github.io/blob/main/marketing/images/dadtruck.jpg?raw=true" style="width:100%"
+      onclick="currentSlide(4)" alt="dad-truck">
+    </div>
+    <div class="column">
+      <img class="demo cursor"
+      src="https://github.com/mjchac/mjchac.github.io/blob/main/marketing/images/greytire.jpg?raw=true" style="width:100%"
+      onclick="currentSlide(5)" alt="silver-car">
+    </div>
+    <div class="column">
+      <img class="demo cursor"
+      src="https://github.com/mjchac/mjchac.github.io/blob/main/marketing/images/jeep.jpg?raw=true" style="width:100%"
+      onclick="currentSlide(6)" alt="jeep">
+    </div>
+    <div class="column">
+      <img class="demo cursor"
+      src="https://github.com/mjchac/mjchac.github.io/blob/main/marketing/images/redtire.jpg?raw=true" style="width:100%"
+      onclick="currentSlide(7)" alt="red-tire">
+    </div>
+    <div class="column">
+      <img class="demo cursor"
+      src="https://github.com/mjchac/mjchac.github.io/blob/main/marketing/images/rv.jpg?raw=true" style="width:100%"
+      onclick="currentSlide(8)" alt="rv">
+    </div>
+    <div class="column">
+      <img class="demo cursor"
+      src="https://github.com/mjchac/mjchac.github.io/blob/main/marketing/images/tractor.jpg?raw=true" style="width:100%"
+      onclick="currentSlide(9)" alt="tractor">
+    </div>
+    <div class="column">
+      <img class="demo cursor"
+      src="https://github.com/mjchac/mjchac.github.io/blob/main/marketing/images/trucktires.jpg?raw=true" style="width:100%"
+      onclick="currentSlide(10)" alt="tires">
+    </div>
+    <div class="column">
+      <img class="demo cursor"
+      src="https://github.com/mjchac/mjchac.github.io/blob/main/marketing/images/whitetruck.jpg?raw=true" style="width:100%"
+      onclick="currentSlide(11)" alt="white-truck">
+    </div>
+    <div class="column">
+      <img class="demo cursor"
+      src="https://github.com/mjchac/mjchac.github.io/blob/main/marketing/images/yellowtire.jpg?raw=true" style="width:100%"
+      onclick="currentSlide(12)" alt="yellow-tire">
+    </div>
+    </div>
+  </div>
 </section>
+
 <br>
 <footer>Copyright © 2021 ROCKY MOUNTAIN MOBILE TIRES - All Rights Reserved.</footer>
+
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  function currentSlide(n) {
+    let i;
+    let slides=
+    documents.getElementsByClassName("mySlides");
+    let dots = 
+    document.getElementsByClassName("demo");
+    let captionText = 
+    document.getElementById("caption");
+    if (n > slides.length)
+    {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length;
+    i++) {
+      slides[i].style.display = "none";
+    }
+    for (i=0; i < dots.length; i++)
+    {
+      dots[i].className = 
+      dots[i].className.replace("active","");
+    }
+    slides[slideIndex-
+  1].style.display = "block";
+  dots[slideIndex-1].className += "active";
+  captionText.innerHTML = 
+  dots[slideIndex-1].alt;
+        }
+</script>
+
 </body>
 </html>
